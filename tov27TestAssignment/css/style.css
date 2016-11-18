@@ -30,7 +30,7 @@ html, body, .wrapper {
     display: flex;
     flex-flow: column;
     align-items: flex-start;
-    width: 400px;
+    min-width: 400px;
     height: 100%;
     overflow-y: scroll;
 }

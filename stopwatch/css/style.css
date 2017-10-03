@@ -1,0 +1,52 @@
+
+
+.wrapper {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    font-family: "Helvetica Neue";
+}
+
+.timer-wrapper {
+    display: flex;
+    flex-flow: column wrap;
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    margin: 20px;
+    width: 800px;
+    height: 200px;
+    font-size: 128px;
+}
+
+.timer {
+    margin-left: 150px;
+}
+
+.buttons {
+    display: flex;
+
+}
+
+.button {
+    width: 150px;
+    height: 150px;
+    margin: 50px;
+    padding:0;
+    border-radius: 50%;
+    border: none;
+    font-size: 32px;
+    box-shadow: none;
+}
+
+.button-start {
+    color: rgb(28, 184, 65);
+}
+
+.button-pause {
+    color: rgb(66, 184, 221);
+}
+
+.button-clear {
+
+    color:  rgb(200, 0, 0);
+}

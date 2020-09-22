@@ -1,0 +1,3 @@
+[submodule "new-year.lighting"]
+	path = new-year.lighting
+	url = git@github.com:chesnishyy/new-year.lighting.git

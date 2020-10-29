@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-W62R1RE81Z"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-W62R1RE81Z');
+  </script>
   <title>Новогодняя иллюминация</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +17,8 @@
   <link rel="stylesheet" href="vendors/owl-carousel/css/owl.carousel.min.css">
   <link rel="stylesheet" href="vendors/owl-carousel/css/owl.theme.default.css">
   <link rel="stylesheet" href="vendors/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
   <link rel="stylesheet" href="vendors/aos/css/aos.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -32,18 +43,27 @@
                 <span class="mdi mdi-close navbar-toggler-icon pl-5"></span>
               </button>
             </li>
+
             <li class="nav-item">
-              <a class="nav-link" href="#header-section">Главная <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#header-section">Главная<span class="sr-only">(current)</span></a>
             </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#case-examples-section">Услуги</a>
+            </li>
+
             <li class="nav-item">
               <a class="nav-link" href="#features-section">Как это работает</a>
             </li>
+
             <li class="nav-item">
-              <a class="nav-link" href="#case-studies-section">Наши работы</a>
+              <a class="nav-link" href="#digital-marketing-section">Выгоды клиента</a>
             </li>
+
             <li class="nav-item">
-              <a class="nav-link" href="#feedback-section">Отзывы</a>
+              <a class="nav-link" href="#contact-section">Контакты</a>
             </li>
+
             <li class="nav-item btn-contact-us pl-4 pl-lg-0">
               <button class="btn btn-info" data-toggle="modal" data-target="#exampleModal">Написать нам</button>
             </li>
@@ -52,51 +72,159 @@
       </div>
     </nav>   
   </header>
+
   <div class="banner" >
     <div class="container">
-      <h1 class="font-weight-semibold">Твій дім -<br>новорічна казка!</h1>
-      <h6 class="font-weight-normal text-muted pb-3">Замов унікальне новорічне оформлення будинку та подаруй своїй родині чарівну атмосферу свята</h6>
-      <div>
-        <button class="btn btn-opacity-light mr-1">Get started</button>
-        <button class="btn btn-opacity-success ml-1">Learn more</button>
+      <h1 class="font-weight-semibold">Создаем новогоднюю сказку!</h1>
+      <h6 class="font-weight-normal text-muted pb-3">
+        Новогодняя иллюминация домов, магазинов, отдельных частей ландшафта. Все елочные гирлянды в наличии. Работы любой сложности.
+      </h6>
+      <div class="fixed-bottom sticky-buttons">
+        <a class="mr-1" href="https://t.me/SvitloHouse"><img src="./svg/TelegramLogo.svg" alt="telegram logo" width="50" height="50"></a>
+
+        <a class=ml-1" href="viber://contact?number=%2B380953257740"><img src="./svg/Share_Viber_icon.png" alt="viber logo" width="50" height="50"></a>
       </div>
       <img src="img/main.png" alt="" class="img-fluid banner-image">
     </div>
   </div>
+
   <div class="content-wrapper">
     <div class="container">
+      <section class="case-studies" id="case-examples-section">
+        <div class="row grid-margin">
+          <div class="col-12 text-center pb-5">
+            <h2>Наши работы</h2>
+            <h6 class="section-subtitle text-muted">Lorem ipsum dolor sit amet, tincidunt vestibulum.</h6>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 stretch-card mb-3 mb-lg-0" data-aos="zoom-in">
+            <div class="card color-cards">
+              <div class="card-body p-0">
+                <div class="bg-primary text-center card-contents">
+                  <div class="card-image">
+                    <img src="images/Group95.svg" class="case-studies-card-img" alt="">
+                  </div>
+                  <div class="card-desc-box d-flex align-items-center justify-content-around">
+                    <div>
+                      <h6 class="text-white pb-2 px-3">Know more about Online marketing</h6>
+                      <button class="btn btn-white">Read More</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-details text-center pt-4">
+                  <h6 class="m-0 pb-1">Online Marketing</h6>
+                  <p>Seo, Marketing</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 stretch-card mb-3 mb-lg-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="card color-cards">
+              <div class="card-body p-0">
+                <div class="bg-warning text-center card-contents">
+                  <div class="card-image">
+                    <img src="images/Group108.svg" class="case-studies-card-img" alt="">
+                  </div>
+                  <div class="card-desc-box d-flex align-items-center justify-content-around">
+                    <div>
+                      <h6 class="text-white pb-2 px-3">Know more about Web Development</h6>
+                      <button class="btn btn-white">Read More</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-details text-center pt-4">
+                  <h6 class="m-0 pb-1">Web Development</h6>
+                  <p>Developing, Designing</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 stretch-card mb-3 mb-lg-0" data-aos="zoom-in" data-aos-delay="400">
+            <div class="card color-cards">
+              <div class="card-body p-0">
+                <div class="bg-violet text-center card-contents">
+                  <div class="card-image">
+                    <img src="images/Group126.svg" class="case-studies-card-img" alt="">
+                  </div>
+                  <div class="card-desc-box d-flex align-items-center justify-content-around">
+                    <div>
+                      <h6 class="text-white pb-2 px-3">Know more about Web Designing</h6>
+                      <button class="btn btn-white">Read More</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-details text-center pt-4">
+                  <h6 class="m-0 pb-1">Web Designing</h6>
+                  <p>Designing, Developing</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 stretch-card" data-aos="zoom-in" data-aos-delay="600">
+            <div class="card color-cards">
+              <div class="card-body p-0">
+                <div class="bg-success text-center card-contents">
+                  <div class="card-image">
+                    <img src="images/Group115.svg" class="case-studies-card-img" alt="">
+                  </div>
+                  <div class="card-desc-box d-flex align-items-center justify-content-around">
+                    <div>
+                      <h6 class="text-white pb-2 px-3">Know more about Software Development</h6>
+                      <button class="btn btn-white">Read More</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-details text-center pt-4">
+                  <h6 class="m-0 pb-1">Software Development</h6>
+                  <p>Developing, Designing</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="features-overview" id="features-section" >
         <div class="content-header">
-          <h2>How does it works</h2>
-          <h6 class="section-subtitle text-muted">One theme that serves as an easy-to-use operational toolkit<br>that meets customer's needs.</h6>
+          <h2>Как это работает?</h2>
+
+          <h6 class="section-subtitle text-muted">Гарантия на все работы!</h6>
         </div>
-        <div class="d-md-flex justify-content-between">
-          <div class="grid-margin d-flex justify-content-start">
-            <div class="features-width">
-              <img src="images/Group12.svg" alt="" class="img-icons">
-              <h5 class="py-3">Speed<br>Optimisation</h5>
-              <p class="text-muted">Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.</p>
-              <a href="#"><p class="readmore-link">Readmore</p></a>  
+
+        <div class="container mb-4">
+          <div class="row">
+            <div class="col">
+              <img src="svg/local_phone-black-48dp.svg" alt="" class="img-icons">
+
+              <h5 class="py-3">Звоните<br></h5>
+              <p class="text-muted">или оставляйте заявку</p>
             </div>
-          </div>
-          <div class="grid-margin d-flex justify-content-center">
-            <div class="features-width">
-              <img src="images/Group7.svg" alt="" class="img-icons">
-              <h5 class="py-3">SEO and<br>Backlinks</h5>
-              <p class="text-muted">Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.</p>
-              <a href="#"><p class="readmore-link">Readmore</p></a>
+
+            <div class="col">
+              <img src="svg/architecture-black-48dp.svg" alt="" class="img-icons">
+              <h5 class="py-3">Выезд<br>специалиста</h5>
+              <p class="text-muted">Приезжаем в удобное для вас время и делаем замеры</p>
             </div>
-          </div>
-          <div class="grid-margin d-flex justify-content-end">
-            <div class="features-width">
-              <img src="images/Group5.svg" alt="" class="img-icons">
-              <h5 class="py-3">Content<br>Marketing</h5>
-              <p class="text-muted">Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.</p>
-              <a href="#"><p class="readmore-link">Readmore</p></a>
+
+            <div class="col">
+              <img src="svg/assignment-black-48dp.svg" alt="" class="img-icons">
+              <h5 class="py-3">Заключаем<br>договор</h5>
+              <p class="text-muted">Прописываем сроки и условия выполнения работ</p>
+            </div>
+
+            <div class="col">
+              <img src="svg/scatter_plot-black-48dp.svg" alt="" class="img-icons">
+              <h5 class="py-3">Дизайн<br></h5>
+              <p class="text-muted">Создаем макет готового дома предварительно узнав о ваших предпочтениях</p>
+            </div>
+
+            <div class="col">
+              <img src="svg/construction-black-48dp.svg" alt="" class="img-icons">
+              <h5 class="py-3">Монтаж<br></h5>
+              <p class="text-muted">Украшаем и подключаем здание</p>
             </div>
           </div>
         </div>
-      </section>     
+      </section>
+
       <section class="digital-marketing-service" id="digital-marketing-section">
         <div class="row align-items-center">
           <div class="col-12 col-lg-7 grid-margin grid-margin-lg-0" data-aos="fade-right">
@@ -124,207 +252,117 @@
           </div>
         </div>
       </section>     
-      <section class="case-studies" id="case-studies-section">
-        <div class="row grid-margin">
-          <div class="col-12 text-center pb-5">
-            <h2>Наши работы</h2>
-            <h6 class="section-subtitle text-muted">Lorem ipsum dolor sit amet, tincidunt vestibulum.</h6>
-          </div>
-          <div class="col-12 col-md-6 col-lg-3 stretch-card mb-3 mb-lg-0" data-aos="zoom-in">
-            <div class="card color-cards">
-              <div class="card-body p-0">
-                <div class="bg-primary text-center card-contents">
-                  <div class="card-image">
-                    <img src="images/Group95.svg" class="case-studies-card-img" alt="">
-                  </div>  
-                  <div class="card-desc-box d-flex align-items-center justify-content-around">
-                    <div>
-                      <h6 class="text-white pb-2 px-3">Know more about Online marketing</h6>
-                      <button class="btn btn-white">Read More</button>
-                    </div>
-                  </div>
-                </div>   
-                <div class="card-details text-center pt-4">
-                    <h6 class="m-0 pb-1">Online Marketing</h6>
-                    <p>Seo, Marketing</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-3 stretch-card mb-3 mb-lg-0" data-aos="zoom-in" data-aos-delay="200">
-            <div class="card color-cards">
-              <div class="card-body p-0">
-                <div class="bg-warning text-center card-contents">
-                  <div class="card-image">
-                      <img src="images/Group108.svg" class="case-studies-card-img" alt="">
-                  </div>  
-                  <div class="card-desc-box d-flex align-items-center justify-content-around">
-                    <div>
-                      <h6 class="text-white pb-2 px-3">Know more about Web Development</h6>
-                      <button class="btn btn-white">Read More</button>
-                    </div>
-                  </div>
-                </div>   
-                <div class="card-details text-center pt-4">
-                    <h6 class="m-0 pb-1">Web Development</h6>
-                    <p>Developing, Designing</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-3 stretch-card mb-3 mb-lg-0" data-aos="zoom-in" data-aos-delay="400">
-            <div class="card color-cards">
-              <div class="card-body p-0">
-                <div class="bg-violet text-center card-contents">
-                  <div class="card-image">
-                      <img src="images/Group126.svg" class="case-studies-card-img" alt="">
-                  </div>  
-                  <div class="card-desc-box d-flex align-items-center justify-content-around">
-                    <div>
-                      <h6 class="text-white pb-2 px-3">Know more about Web Designing</h6>
-                      <button class="btn btn-white">Read More</button>
-                    </div>
-                  </div>
-                </div>   
-                <div class="card-details text-center pt-4">
-                    <h6 class="m-0 pb-1">Web Designing</h6>
-                    <p>Designing, Developing</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-3 stretch-card" data-aos="zoom-in" data-aos-delay="600">
-            <div class="card color-cards">
-              <div class="card-body p-0">
-                <div class="bg-success text-center card-contents">
-                  <div class="card-image">
-                      <img src="images/Group115.svg" class="case-studies-card-img" alt="">
-                  </div>  
-                  <div class="card-desc-box d-flex align-items-center justify-content-around">
-                    <div>
-                      <h6 class="text-white pb-2 px-3">Know more about Software Development</h6>
-                      <button class="btn btn-white">Read More</button>
-                    </div>
-                  </div>
-                </div>   
-                <div class="card-details text-center pt-4">
-                    <h6 class="m-0 pb-1">Software Development</h6>
-                    <p>Developing, Designing</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>     
-      <section class="customer-feedback" id="feedback-section">
-        <div class="row">
-          <div class="col-12 text-center pb-5">
-            <h2>What our customers have to say</h2>
-            <h6 class="section-subtitle text-muted m-0">Lorem ipsum dolor sit amet, tincidunt vestibulum.</h6>
-          </div>
-          <div class="owl-carousel owl-theme grid-margin">
-              <div class="card customer-cards">
-                <div class="card-body">
-                  <div class="text-center">
-                    <img src="images/face2.jpg" width="89" height="89" alt="" class="img-customer">
-                    <p class="m-0 py-3 text-muted">Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.</p>
-                    <div class="content-divider m-auto"></div>
-                    <h6 class="card-title pt-3">Tony Martinez</h6>
-                    <h6 class="customer-designation text-muted m-0">Marketing Manager</h6>
-                  </div>
-                </div>
-              </div>
-              <div class="card customer-cards">
-                <div class="card-body">
-                  <div class="text-center">
-                    <img src="images/face3.jpg" width="89" height="89" alt="" class="img-customer">
-                    <p class="m-0 py-3 text-muted">Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.</p>
-                    <div class="content-divider m-auto"></div>
-                    <h6 class="card-title pt-3">Sophia Armstrong</h6>
-                    <h6 class="customer-designation text-muted m-0">Marketing Manager</h6>
-                  </div>
-                </div>
-              </div>
-              <div class="card customer-cards">
-                <div class="card-body">
-                  <div class="text-center">
-                    <img src="images/face20.jpg" width="89" height="89" alt="" class="img-customer">
-                    <p class="m-0 py-3 text-muted">Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.</p>
-                    <div class="content-divider m-auto"></div>
-                    <h6 class="card-title pt-3">Cody Lambert</h6>
-                    <h6 class="customer-designation text-muted m-0">Marketing Manager</h6>
-                  </div>
-                </div>
-              </div>
-              <div class="card customer-cards">
-                <div class="card-body">
-                  <div class="text-center">
-                    <img src="images/face15.jpg" width="89" height="89" alt="" class="img-customer">
-                    <p class="m-0 py-3 text-muted">Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.</p>
-                    <div class="content-divider m-auto"></div>
-                    <h6 class="card-title pt-3">Cody Lambert</h6>
-                    <h6 class="customer-designation text-muted m-0">Marketing Manager</h6>
-                  </div>
-                </div>
-              </div>
-              <div class="card customer-cards">
-                <div class="card-body">
-                  <div class="text-center">
-                    <img src="images/face16.jpg" width="89" height="89" alt="" class="img-customer">
-                    <p class="m-0 py-3 text-muted">Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.</p>
-                    <div class="content-divider m-auto"></div>
-                    <h6 class="card-title pt-3">Cody Lambert</h6>
-                    <h6 class="customer-designation text-muted m-0">Marketing Manager</h6>
-                  </div>
-                </div>
-              </div>
-              <div class="card customer-cards">
-                <div class="card-body">
-                  <div class="text-center">
-                    <img src="images/face1.jpg" width="89" height="89" alt="" class="img-customer">
-                    <p class="m-0 py-3 text-muted">Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.</p>
-                    <div class="content-divider m-auto"></div>
-                    <h6 class="card-title pt-3">Tony Martinez</h6>
-                    <h6 class="customer-designation text-muted m-0">Marketing Manager</h6>
-                  </div>
-                </div>
-              </div>
-              <div class="card customer-cards">
-                <div class="card-body">
-                  <div class="text-center">
-                    <img src="images/face2.jpg" width="89" height="89" alt="" class="img-customer">
-                    <p class="m-0 py-3 text-muted">Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.</p>
-                    <div class="content-divider m-auto"></div>
-                    <h6 class="card-title pt-3">Tony Martinez</h6>
-                    <h6 class="customer-designation text-muted m-0">Marketing Manager</h6>
-                  </div>
-                </div>
-              </div>
-              <div class="card customer-cards">
-                <div class="card-body">
-                  <div class="text-center">
-                    <img src="images/face3.jpg" width="89" height="89" alt="" class="img-customer">
-                    <p class="m-0 py-3 text-muted">Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.</p>
-                    <div class="content-divider m-auto"></div>
-                    <h6 class="card-title pt-3">Sophia Armstrong</h6>
-                    <h6 class="customer-designation text-muted m-0">Marketing Manager</h6>
-                  </div>
-                </div>
-              </div>
-              <div class="card customer-cards">
-                <div class="card-body">
-                  <div class="text-center">
-                    <img src="images/face20.jpg" width="89" height="89" alt="" class="img-customer">
-                    <p class="m-0 py-3 text-muted">Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.</p>
-                    <div class="content-divider m-auto"></div>
-                    <h6 class="card-title pt-3">Cody Lambert</h6>
-                    <h6 class="customer-designation text-muted m-0">Marketing Manager</h6>
-                  </div>
-                </div>
-              </div>
-          </div>
-        </div>
-      </section>
+
+<!--      <section class="customer-feedback" id="feedback-section">-->
+<!--        <div class="row">-->
+<!--          <div class="col-12 text-center pb-5">-->
+<!--            <h2>What our customers have to say</h2>-->
+<!--            <h6 class="section-subtitle text-muted m-0">Lorem ipsum dolor sit amet, tincidunt vestibulum.</h6>-->
+<!--          </div>-->
+<!--          <div class="owl-carousel owl-theme grid-margin">-->
+<!--              <div class="card customer-cards">-->
+<!--                <div class="card-body">-->
+<!--                  <div class="text-center">-->
+<!--                    <img src="images/face2.jpg" width="89" height="89" alt="" class="img-customer">-->
+<!--                    <p class="m-0 py-3 text-muted">Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.</p>-->
+<!--                    <div class="content-divider m-auto"></div>-->
+<!--                    <h6 class="card-title pt-3">Tony Martinez</h6>-->
+<!--                    <h6 class="customer-designation text-muted m-0">Marketing Manager</h6>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              <div class="card customer-cards">-->
+<!--                <div class="card-body">-->
+<!--                  <div class="text-center">-->
+<!--                    <img src="images/face3.jpg" width="89" height="89" alt="" class="img-customer">-->
+<!--                    <p class="m-0 py-3 text-muted">Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.</p>-->
+<!--                    <div class="content-divider m-auto"></div>-->
+<!--                    <h6 class="card-title pt-3">Sophia Armstrong</h6>-->
+<!--                    <h6 class="customer-designation text-muted m-0">Marketing Manager</h6>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              <div class="card customer-cards">-->
+<!--                <div class="card-body">-->
+<!--                  <div class="text-center">-->
+<!--                    <img src="images/face20.jpg" width="89" height="89" alt="" class="img-customer">-->
+<!--                    <p class="m-0 py-3 text-muted">Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.</p>-->
+<!--                    <div class="content-divider m-auto"></div>-->
+<!--                    <h6 class="card-title pt-3">Cody Lambert</h6>-->
+<!--                    <h6 class="customer-designation text-muted m-0">Marketing Manager</h6>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              <div class="card customer-cards">-->
+<!--                <div class="card-body">-->
+<!--                  <div class="text-center">-->
+<!--                    <img src="images/face15.jpg" width="89" height="89" alt="" class="img-customer">-->
+<!--                    <p class="m-0 py-3 text-muted">Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.</p>-->
+<!--                    <div class="content-divider m-auto"></div>-->
+<!--                    <h6 class="card-title pt-3">Cody Lambert</h6>-->
+<!--                    <h6 class="customer-designation text-muted m-0">Marketing Manager</h6>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              <div class="card customer-cards">-->
+<!--                <div class="card-body">-->
+<!--                  <div class="text-center">-->
+<!--                    <img src="images/face16.jpg" width="89" height="89" alt="" class="img-customer">-->
+<!--                    <p class="m-0 py-3 text-muted">Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.</p>-->
+<!--                    <div class="content-divider m-auto"></div>-->
+<!--                    <h6 class="card-title pt-3">Cody Lambert</h6>-->
+<!--                    <h6 class="customer-designation text-muted m-0">Marketing Manager</h6>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              <div class="card customer-cards">-->
+<!--                <div class="card-body">-->
+<!--                  <div class="text-center">-->
+<!--                    <img src="images/face1.jpg" width="89" height="89" alt="" class="img-customer">-->
+<!--                    <p class="m-0 py-3 text-muted">Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.</p>-->
+<!--                    <div class="content-divider m-auto"></div>-->
+<!--                    <h6 class="card-title pt-3">Tony Martinez</h6>-->
+<!--                    <h6 class="customer-designation text-muted m-0">Marketing Manager</h6>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              <div class="card customer-cards">-->
+<!--                <div class="card-body">-->
+<!--                  <div class="text-center">-->
+<!--                    <img src="images/face2.jpg" width="89" height="89" alt="" class="img-customer">-->
+<!--                    <p class="m-0 py-3 text-muted">Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.</p>-->
+<!--                    <div class="content-divider m-auto"></div>-->
+<!--                    <h6 class="card-title pt-3">Tony Martinez</h6>-->
+<!--                    <h6 class="customer-designation text-muted m-0">Marketing Manager</h6>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              <div class="card customer-cards">-->
+<!--                <div class="card-body">-->
+<!--                  <div class="text-center">-->
+<!--                    <img src="images/face3.jpg" width="89" height="89" alt="" class="img-customer">-->
+<!--                    <p class="m-0 py-3 text-muted">Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.</p>-->
+<!--                    <div class="content-divider m-auto"></div>-->
+<!--                    <h6 class="card-title pt-3">Sophia Armstrong</h6>-->
+<!--                    <h6 class="customer-designation text-muted m-0">Marketing Manager</h6>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              <div class="card customer-cards">-->
+<!--                <div class="card-body">-->
+<!--                  <div class="text-center">-->
+<!--                    <img src="images/face20.jpg" width="89" height="89" alt="" class="img-customer">-->
+<!--                    <p class="m-0 py-3 text-muted">Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.</p>-->
+<!--                    <div class="content-divider m-auto"></div>-->
+<!--                    <h6 class="card-title pt-3">Cody Lambert</h6>-->
+<!--                    <h6 class="customer-designation text-muted m-0">Marketing Manager</h6>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </section>-->
+
       <section class="contact-us" id="contact-section">
         <div class="contact-us-bgimage grid-margin" >
           <div class="pb-4">

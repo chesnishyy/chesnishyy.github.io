@@ -10001,7 +10001,7 @@ footer a:hover {
 }
 
 .navbar .container .navbar-brand-wrapper .logo {
-  height: 80px;
+  height: 50px;
 }
 
 @media (max-width: 992px) {
@@ -10149,7 +10149,7 @@ footer a:hover {
 }
 
 .material-icons.red700 {
-  color: #d32f2f;
+  color: #FBC02D;
 }
 
 .material-icons.indigo700 {

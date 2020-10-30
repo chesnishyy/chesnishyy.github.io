@@ -45,7 +45,7 @@ body {
 // SECTION-2
 .features-overview {
   .content-header {
-    padding: 78px 0 48px 0;
+    padding: 48px 0;
     text-align: center;
     @media (max-width: 992px) {
       padding: 60px 0;
@@ -57,7 +57,7 @@ body {
     font-weight: 500;
     transition: color 0.5s ease-in-out;
     &:hover {
-      color: #ff0000;
+      color: $danger;
     }
   }
 
@@ -127,6 +127,7 @@ body {
   .category-img {
     width: 260px;
     height: 260px;
+    margin: 10px;
   }
 
   .category-img:hover {
@@ -172,6 +173,12 @@ body {
     background-size:cover;
     text-align: center;
     padding: 83px 0px 68px 0px;
+  }
+
+  .content-divider {
+    background-color: $danger;
+    height: 3px;
+    width: 73px;
   }
 }
 
@@ -281,12 +288,12 @@ footer {
 .owl-item {
   &:nth-child(odd) {
     .content-divider {
-      background-color: black;
+      background-color: $danger;
     }
   }
   &:nth-child(even) {
     .content-divider {
-      background-color: red;
+      background-color: #303F9F;
     }
   }
 }
@@ -298,6 +305,14 @@ footer {
     padding: 0px 30px;
   }
 } 
+
+.fixed-buttons {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 10px;
+  bottom: 20px;
+}
 
 
 

@@ -1,6 +1,6 @@
 @import "https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap";
 /*!
- * Bootstrap v4.5.2 (https://getbootstrap.com/)
+ * Bootstrap v4.5.3 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
@@ -215,6 +215,7 @@ caption {
 
 th {
   text-align: inherit;
+  text-align: -webkit-match-parent;
 }
 
 label {
@@ -3505,6 +3506,7 @@ input[type="button"].btn-block {
   display: block;
   min-height: 1.5rem;
   padding-left: 1.5rem;
+  color-adjust: exact;
 }
 
 .custom-control-inline {
@@ -4962,6 +4964,7 @@ a.badge-dark:focus, a.badge-dark.focus {
   position: absolute;
   top: 0;
   right: 0;
+  z-index: 2;
   padding: 0.75rem 1.25rem;
   color: inherit;
 }
@@ -9553,7 +9556,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .text-break {
   word-break: break-word !important;
-  overflow-wrap: break-word !important;
+  word-wrap: break-word !important;
 }
 
 .text-reset {
@@ -9784,7 +9787,6 @@ body.sidebar-open::before {
 
 .case-studies .color-cards .card-contents {
   position: relative;
-  padding: 75px 0px;
 }
 
 .case-studies .color-cards .card-details p {
@@ -9813,19 +9815,24 @@ body.sidebar-open::before {
   background: #bbbbf2;
 }
 
-.case-studies .case-studies-card-img {
-  height: 106px;
-}
-
 .case-studies .card-desc-box {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 51, 204, 0.8);
+  background-color: #1998ff;
   transition: all 0.8s ease-in-out;
   opacity: 0;
+}
+
+.case-studies .category-img {
+  width: 260px;
+  height: 260px;
+}
+
+.case-studies .category-img:hover {
+  cursor: pointer;
 }
 
 .customer-feedback .customer-cards {
@@ -10063,7 +10070,6 @@ footer a:hover {
 
 .grid-margin {
   margin: 0 10px 100px 10px;
-  border: #0d4f85 1px solid;
 }
 
 @media (max-width: 992px) {
@@ -10093,6 +10099,45 @@ footer a:hover {
 .stretch-card .card {
   width: 100%;
   min-width: 100%;
+}
+
+/* Rules for sizing the icon. */
+.material-icons.md-18 {
+  font-size: 18px;
+}
+
+.material-icons.md-24 {
+  font-size: 24px;
+}
+
+.material-icons.md-36 {
+  font-size: 36px;
+}
+
+.material-icons.md-48 {
+  font-size: 48px;
+}
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.material-icons.md-dark.md-inactive {
+  color: rgba(0, 0, 0, 0.26);
+}
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light {
+  color: white;
+}
+
+.material-icons.md-light.md-inactive {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.material-icons.red600 {
+  color: #e53935;
 }
 
 .btn {
@@ -10406,6 +10451,10 @@ footer a:hover {
 .btn-outline-dark:hover {
   color: white;
   background-color: #221e1e;
+}
+
+.sticky-buttons {
+  right: 0;
 }
 
 .card {

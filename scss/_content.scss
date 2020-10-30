@@ -85,7 +85,7 @@ body {
   .color-cards {
     .card-contents {
       position: relative;
-      padding: 75px 0px;
+      //padding: 75px 0px;
     }
     .card-details {
       p {
@@ -112,18 +112,29 @@ body {
   .bg-violet {
     background: #bbbbf2;
   }
-  .case-studies-card-img {
-    height: 106px;
-  }
+
   .card-desc-box {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 51, 204, 0.8);
+    background-color: #1998ff;
     transition: all 0.8s ease-in-out;
     opacity: 0;
+  }
+
+  .category-img {
+    width: 260px;
+    height: 260px;
+  }
+
+  .category-img:hover {
+    cursor: pointer;
+    //TODO: uncomment width/height and add animation
+    //width: 255px;
+    //height: 255px;
+
   }
 }
 

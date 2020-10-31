@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "gulp css"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:chesnishyy/new-year.lighting.git"
+    "url": "git@github.com:chesnishyy/chesnishyy.github.io.git"
   },
   "author": "",
   "license": "ISC",

@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Firebase Hosting</title>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/8.0.0/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/8.0.0/firebase-auth.js"></script>
+    <script defer src="/__/firebase/8.0.0/firebase-database.js"></script>
+    <script defer src="/__/firebase/8.0.0/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/8.0.0/firebase-storage.js"></script>
+    <script defer src="/__/firebase/8.0.0/firebase-analytics.js"></script>
+    <script defer src="/__/firebase/8.0.0/firebase-remote-config.js"></script>
+    <script defer src="/__/firebase/8.0.0/firebase-performance.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+
+    <style media="screen">
+      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
+      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
+      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
+      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
+      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
+      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
+      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
+      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
+      @media (max-width: 600px) {
+        body, #message { margin-top: 0; background: white; box-shadow: none; }
+        body { border-top: 16px solid #ffa100; }
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header-section">
+      <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container">
+          <div class="navbar-brand-wrapper d-flex">
+            <a href="svitlo.house"><img src="img/logo_horizontal_blue_yellow.png" alt="svitlo.house logo" class="logo" /></a>
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="mdi mdi-menu navbar-toggler-icon"></span>
+            </button>
+          </div>
+  
+          <div class="collapse navbar-collapse navbar-menu-wrapper" id="navbarSupportedContent">
+            <ul class="navbar-nav align-items-lg-center align-items-start ml-auto">
+              <li class="d-flex align-items-center justify-content-between pl-4 pl-lg-0">
+                <div class="navbar-collapse-logo">
+                  <img src="images/Group2.svg" alt="">
+                </div>
+                <button class="navbar-toggler close-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="mdi mdi-close navbar-toggler-icon pl-5"></span>
+                </button>
+              </li>
+  
+              <li class="nav-item">
+                <a class="nav-link" href="#header-section">Главная<span class="sr-only">(current)</span></a>
+              </li>
+  
+              <li class="nav-item">
+                <a class="nav-link" href="#case-examples-section">Услуги</a>
+              </li>
+  
+              <li class="nav-item">
+                <a class="nav-link" href="#features-section">Как это работает</a>
+              </li>
+  
+              <li class="nav-item">
+                <a class="nav-link" href="#feedback-section">Выгоды клиента</a>
+              </li>
+  
+              <li class="nav-item">
+                <a class="nav-link" href="#contact-section">Контакты</a>
+              </li>
+  
+              <li class="nav-item btn-contact-us pl-4 pl-lg-0">
+                <button class="btn btn-info" data-toggle="modal">Написать нам</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>   
+    </header>
+  
+    <div class="banner" >
+      <div class="container">
+        <h1 class="font-weight-semibold">Новогодняя иллюминация под ключ</h1>
+        <h5 class="font-weight-normal text-muted pb-3">
+          Украшение домов, магазинов, отдельных частей ландшафта. <br/> Все гирлянды в наличии.
+        </h5>
+        
+        <img src="img/main.png" alt="svitlo house logo" class="img-fluid banner-image">
+      </div>
+    </div>
+  
+    <div class="content-wrapper">
+      <div class="container">
+        <section class="case-studies" id="case-examples-section">
+          <div class="row grid-margin">
+            <div class="col-12 text-center pb-5">
+              <h2>Услуги</h2>
+              <h6 class="section-subtitle text-muted">
+                Освещение домов любой сложности. <br/>
+                Новогоднее украшение ландшафта и фасада.
+              </h6>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 stretch-card mb-3 mb-lg-0" data-aos="zoom-in">
+              <div class="card color-cards">
+                <div class="card-body p-0">
+                  <div class="text-center card-contents">
+                    <img
+                      src="./img/private_house_main.jpg"
+                      alt="Участок и дом с новогодней иллюминацией"
+                      class="category-img"
+                    >
+                  </div>
+                  <div class="card-details text-center pt-4">
+                    <h6 class="m-0 pb-1">Частный сектор</h6>
+                    <p>Участок и дом с новогодней иллюминацией излучают новогоднее настроение.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 stretch-card mb-3 mb-lg-0" data-aos="zoom-in" data-aos-delay="200">
+              <div class="card color-cards">
+                <div class="card-body p-0">
+                  <div class="text-center card-contents">
+                    <img
+                      src="img/comerce_main.jpg"
+                      class="category-img"
+                      alt="Новогоднее украшение коммерческих фасадов"
+                    >
+                  </div>
+                  <div class="card-details text-center pt-4">
+                    <h6 class="m-0 pb-1">Коммерческий сектор</h6>
+                    <p>Освещенная торговая точка привлекает внимание потенциальных клиентов и напоминает о грядущем празднике.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 stretch-card mb-3 mb-lg-0" data-aos="zoom-in" data-aos-delay="400">
+              <div class="card color-cards">
+                <div class="card-body p-0">
+                  <div class="text-center card-contents">
+                    <div class="card-image">
+                      <img
+                          src="img/admin_main.jpg"
+                          class="category-img"
+                          alt="Иллюминация городских зданий"
+                      >
+                    </div>
+                  </div>
+                  <div class="card-details text-center pt-4">
+                    <h6 class="m-0 pb-1">Административные здания</h6>
+                    <p>Иллюминация городских зданий и достопримечательностей</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 stretch-card" data-aos="zoom-in" data-aos-delay="600">
+              <div class="card color-cards">
+                <div class="card-body p-0">
+                  <div class="text-center card-contents">
+                    <img
+                      src="img/fasad_main.jpg"
+                      alt="новогоднее украшение фасадов"
+                      class="category-img"
+                    >
+                  </div>
+                  <div class="card-details text-center pt-4">
+                    <h6 class="m-0 pb-1">Отдельные части фасада и ландшафта</h6>
+                    <p>
+                      Уличные гирлинды уместны на любом объекте экстерьера
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="features-overview" id="features-section" >
+          <div class="content-header">
+            <h2>Как это работает?</h2>
+  
+            <h6 class="section-subtitle text-muted">Гарантия на все работы</h6>
+          </div>
+  
+          <div class="container mb-4">
+            <div class="row">
+              <div class="col">
+                <img src="svg/local_phone-black-48dp.svg" alt="" class="img-icons">
+  
+                <h5 class="py-3">Звоните<br></h5>
+                <p class="text-muted">или оставляйте заявку</p>
+              </div>
+  
+              <div class="col">
+                <img src="svg/architecture-black-48dp.svg" alt="" class="img-icons">
+                <h5 class="py-3">Выезд<br>специалиста</h5>
+                <p class="text-muted">Приезжаем в удобное для вас время и делаем замеры</p>
+              </div>
+  
+              <div class="col">
+                <img src="svg/assignment-black-48dp.svg" alt="" class="img-icons">
+                <h5 class="py-3">Заключаем<br>договор</h5>
+                <p class="text-muted">Прописываем сроки и условия выполнения работ</p>
+              </div>
+  
+              <div class="col">
+                <img src="svg/scatter_plot-black-48dp.svg" alt="" class="img-icons">
+                <h5 class="py-3">Дизайн<br></h5>
+                <p class="text-muted">Создаем макет готового дома предварительно узнав о ваших предпочтениях</p>
+              </div>
+  
+              <div class="col">
+                <img src="svg/construction-black-48dp.svg" alt="" class="img-icons">
+                <h5 class="py-3">Монтаж<br></h5>
+                <p class="text-muted">Украшаем и подключаем здание</p>
+              </div>
+            </div>
+          </div>
+        </section>
+  
+  <!--      <section class="digital-marketing-service" id="digital-marketing-section">-->
+  <!--        <div class="row align-items-center">-->
+  <!--          <div class="col-12 col-lg-7 grid-margin grid-margin-lg-0" data-aos="fade-right">-->
+  <!--            <h3 class="m-0">We Offer a Full Range<br>of Digital Marketing Services!</h3>-->
+  <!--            <div class="col-lg-7 col-xl-6 p-0">-->
+  <!--              <p class="py-4 m-0 text-muted">Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.</p>-->
+  <!--              <p class="font-weight-medium text-muted">Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer</p>-->
+  <!--            </div>    -->
+  <!--          </div>-->
+  <!--          <div class="col-12 col-lg-5 p-0 img-digital grid-margin grid-margin-lg-0" data-aos="fade-left">-->
+  <!--            <img src="images/Group1.png" alt="" class="img-fluid">-->
+  <!--          </div>-->
+  <!--        </div>-->
+  <!--        <div class="row align-items-center">-->
+  <!--          <div class="col-12 col-lg-7 text-center flex-item grid-margin" data-aos="fade-right">-->
+  <!--            <img src="images/Group2.png" alt="" class="img-fluid">-->
+  <!--          </div>-->
+  <!--          <div class="col-12 col-lg-5 flex-item grid-margin" data-aos="fade-left">-->
+  <!--            <h3 class="m-0">Leading Digital Agency<br>for  Business Solution.</h3>-->
+  <!--            <div class="col-lg-9 col-xl-8 p-0">-->
+  <!--              <p class="py-4 m-0 text-muted">Power-packed with impressive features and well-optimized, this template is designed to provide the best performance in all circumstances.</p>-->
+  <!--              <p class="pb-2 font-weight-medium text-muted">Its smart features make it a powerful stand-alone website building tool.</p>-->
+  <!--            </div>-->
+  <!--            <button class="btn btn-info">Readmore</button>-->
+  <!--          </div>-->
+  <!--        </div>-->
+  <!--      </section>     -->
+  
+        <section class="customer-feedback" id="feedback-section">
+          <div class="row">
+            <div class="col-12 text-center pb-5">
+              <h2>Выгоды клиента</h2>
+              <h6 class="section-subtitle text-muted m-0">Декоративное уличное освещение привлекает внимание и интерес.</h6>
+            </div>
+            <div class="owl-carousel owl-theme grid-margin">
+                <div class="card customer-cards">
+                  <div class="card-body">
+                    <div class="text-center">
+  <!--                    <img src="images/face2.jpg" width="89" height="89" alt="" class="img-customer">-->
+                      <i class="material-icons md-48 red700">emoji_objects</i>
+                      <h6 class="card-title pt-3">Качественная LED-продукция</h6>
+                      <p class="m-0 py-3 text-muted">Используемые гирлянды проверены на опыте и безопасны.</p>
+                      <div class="content-divider m-auto"></div>
+                      <!-- <h6 class="customer-designation text-muted m-0">Marketing Manager</h6> -->
+                    </div>
+                  </div>
+                </div>
+                <div class="card customer-cards">
+                  <div class="card-body">
+                    <div class="text-center">
+                      <!-- <img src="images/face3.jpg" width="89" height="89" alt="" class="img-customer"> -->
+                      <i class="material-icons md-48 indigo700">build</i>
+                      <h6 class="card-title pt-3">Профессиональные монтажники</h6>
+                      <p class="m-0 py-3 text-muted">Многолетний опыт в иллюминации новогодними гирляндами.</p>
+                      <div class="content-divider m-auto"></div>
+                      <!-- <h6 class="customer-designation text-muted m-0">Marketing Manager</h6> -->
+                    </div>
+                  </div>
+                </div>
+                <div class="card customer-cards">
+                  <div class="card-body">
+                    <div class="text-center">
+                      <!-- <img src="images/face20.jpg" width="89" height="89" alt="" class="img-customer"> -->
+                      <i class="material-icons md-48 red700">description</i>
+                      <h6 class="card-title pt-3">Гарантия по договору</h6>
+                      <p class="m-0 py-3 text-muted">Высококлассное выполнение работ.</p>
+                      <div class="content-divider m-auto"></div>
+                      <h6 class="card-title pt-3"></h6>
+                      <!-- <h6 class="customer-designation text-muted m-0">Marketing Manager</h6> -->
+                    </div>
+                  </div>
+                </div>
+                <div class="card customer-cards">
+                  <div class="card-body">
+                    <div class="text-center">
+                      <!-- <img src="images/face15.jpg" width="89" height="89" alt="" class="img-customer"> -->
+                      <i class="material-icons md-48 indigo700">home_work</i>
+                      <h6 class="card-title pt-3">Выполнение работ любой сложности</h6>
+                      <p class="m-0 py-3 text-muted">Работаем со всеми объектами: от административных зданий и домов до отдельных частей ландшафта.</p>
+                      <div class="content-divider m-auto"></div>
+                      <!-- <h6 class="customer-designation text-muted m-0">Marketing Manager</h6> -->
+                    </div>
+                  </div>
+                </div>
+                <div class="card customer-cards">
+                  <div class="card-body">
+                    <div class="text-center">
+                      <!-- <img src="images/face16.jpg" width="89" height="89" alt="" class="img-customer"> -->
+                      <i class="material-icons md-48 red700">palette</i>
+                      <h6 class="card-title pt-3">Уникальный дизайн</h6>
+                      <p class="m-0 py-3 text-muted">Дизайнер разрабатывает макет вашего дома в конечном результате с учетом пожеланий.</p>
+                      <div class="content-divider m-auto"></div>
+                      <!-- <h6 class="customer-designation text-muted m-0">Marketing Manager</h6> -->
+                    </div>
+                  </div>
+                </div>
+                <div class="card customer-cards">
+                  <div class="card-body">
+                    <div class="text-center">
+                      <!-- <img src="images/face1.jpg" width="89" height="89" alt="" class="img-customer"> -->
+                      <i class="material-icons md-48 indigo700">emoji_emotions</i>
+                      <h6 class="card-title pt-3">Новогоднее настроение</h6>
+                      <p class="m-0 py-3 text-muted">Светящийся дом создает новогоднюю атмосфету всем, кто имеет удовольствие за ним наблюдать.</p>
+                      <div class="content-divider m-auto"></div>
+                      
+                      <!-- <h6 class="customer-designation text-muted m-0">Marketing Manager</h6> -->
+                    </div>
+                  </div>
+                </div>
+                <!-- <div class="card customer-cards">
+                  <div class="card-body">
+                    <div class="text-center">
+                      <img src="images/face2.jpg" width="89" height="89" alt="" class="img-customer">
+                      <p class="m-0 py-3 text-muted">Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.</p>
+                      <div class="content-divider m-auto"></div>
+                      <h6 class="card-title pt-3">Tony Martinez</h6>
+                      <h6 class="customer-designation text-muted m-0">Marketing Manager</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="card customer-cards">
+                  <div class="card-body">
+                    <div class="text-center">
+                      <img src="images/face3.jpg" width="89" height="89" alt="" class="img-customer">
+                      <p class="m-0 py-3 text-muted">Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.</p>
+                      <div class="content-divider m-auto"></div>
+                      <h6 class="card-title pt-3">Sophia Armstrong</h6>
+                      <h6 class="customer-designation text-muted m-0">Marketing Manager</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="card customer-cards">
+                  <div class="card-body">
+                    <div class="text-center">
+                      <img src="images/face20.jpg" width="89" height="89" alt="" class="img-customer">
+                      <p class="m-0 py-3 text-muted">Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.</p>
+                      <div class="content-divider m-auto"></div>
+                      <h6 class="card-title pt-3">Cody Lambert</h6>
+                      <h6 class="customer-designation text-muted m-0">Marketing Manager</h6>
+                    </div>
+                  </div> -->
+                </div>
+            </div>
+          </div>
+        </section>
+  
+        <section class="contact-us" id="contact-section">
+          <div class="contact-us-bgimage grid-margin" >
+            <div class="pb-4">
+              <h4 class="px-3 px-md-0 mb-2" data-aos="fade-down">Контакты:</h4>
+  
+              <h6 class="px-3 px-md-0 mb-2" data-aos="fade-down">
+                <a href="tel:+380953257740">+38 095 325 77 40</a>
+              </h6>
+  
+              <div class="content-divider m-auto mb-2"></div>
+  
+              <h4 class="px-3 px-md-0 mb-2" data-aos="fade-down"></h4>
+              <h6 class="pt-1" data-aos="fade-down">Или оставьте заявку чтобы получить консультацию специалиста</h6>
+            </div>
+            <div data-aos="fade-up">
+              <button class="btn btn-rounded btn-outline-danger">Нажав сюда</button>
+            </div>          
+          </div>
+        </section>
+        <section class="contact-details" id="contact-details-section">
+          <div class="row text-center text-md-left">
+            <div class="col-12 col-md-6 col-lg-3 grid-margin">
+              <img src="images/Group2.svg" alt="" class="pb-2">
+              <div class="pt-2">
+                <p class="text-muted m-0">ganja.sasha@gmail.com</p>
+                <p class="text-muted m-0">
+                  <a href="tel:+380953257740">+38 095 325 77 40</a>
+                </p>
+              </div>         
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 grid-margin">
+              <h5 class="pb-2">Подпишись на рассылку</h5>
+              <p class="text-muted">и получай все скидки и акционные предложения первым </p>
+              <form>
+                <input type="text" class="form-control" id="Email" placeholder="Email id">
+              </form>
+              <div class="pt-3">
+                <button class="btn btn-dark">Subscribe</button>
+              </div>   
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 grid-margin">
+              <h5 class="pb-2">Our Guidelines</h5>
+              <a href="#"><p class="m-0 pb-2">Terms</p></a>   
+              <a href="#" ><p class="m-0 pt-1 pb-2">Privacy policy</p></a> 
+              <a href="#"><p class="m-0 pt-1 pb-2">Cookie Policy</p></a> 
+              <a href="#"><p class="m-0 pt-1">Discover</p></a> 
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 grid-margin">
+                <h5 class="pb-2">Наш адрес:</h5>
+                <!-- TODO: fix address -->
+                <p class="text-muted">г.Киев<br>ул. Сагайдачного 32, оф 5</p>
+                <div class="d-flex justify-content-center justify-content-md-start">
+  
+                <!-- TODO: fix links or remove -->
+                  <a href="#"><span class="mdi mdi-facebook"></span></a>
+                  <a href="#"><span class="mdi mdi-twitter"></span></a>
+                  <a href="#"><span class="mdi mdi-instagram"></span></a>
+                  <a href="#"><span class="mdi mdi-linkedin"></span></a>
+                </div>
+            </div>
+          </div>  
+        </section>
+  
+        <footer class="border-top">
+          <p class="text-center text-muted pt-4">Copyright © 2020<a href="" class="px-1">SVITLO HOUSE</a>All rights reserved.</p>
+        </footer>
+  
+        <!-- Modal for Contact - us Button -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title" id="exampleModalLabel">Contact Us</h4>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="Name">Name</label>
+                    <input type="text" class="form-control" id="Name" placeholder="Name">
+                  </div>
+                  <div class="form-group">
+                    <label for="Email">Email</label>
+                    <input type="email" class="form-control" id="Email-1" placeholder="Email">
+                  </div>
+                  <div class="form-group">
+                    <label for="Message">Message</label>
+                    <textarea class="form-control" id="Message" placeholder="Enter your Message"></textarea>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-success">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div>
+  
+    <div class="fixed-buttons">
+      <a class="mr-1 mb-2" href="https://t.me/SvitloHouse">
+        <img src="./svg/TelegramLogo.svg" alt="telegram logo" width="50" height="50">
+      </a>
+  
+      <a class=ml-1 mt-2" href="https://invite.viber.com/?g2=AQBKa0wYjjyWYUxdszxrncEsDxeEb4Z13suxonc/lX5wiqFJPI8U2oZUKLkAPPhv">
+        <img src="./svg/Share_Viber_icon.png" alt="viber logo" width="50" height="50">
+      </a>
+    </div>
+  
+    <script src="vendors/jquery/jquery.min.js"></script>
+    <script src="vendors/bootstrap/bootstrap.min.js"></script>
+    <script src="vendors/owl-carousel/js/owl.carousel.min.js"></script>
+    <script src="vendors/aos/js/aos.js"></script>
+    <script src="js/landingpage.js"></script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const loadEl = document.querySelector('#load');
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        // // The Firebase SDK is initialized and available here!
+        //
+        // firebase.auth().onAuthStateChanged(user => { });
+        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+        // firebase.messaging().requestPermission().then(() => { });
+        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+        // firebase.analytics(); // call to activate
+        // firebase.analytics().logEvent('tutorial_completed');
+        // firebase.performance(); // call to activate
+        //
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+        try {
+          let app = firebase.app();
+          let features = [
+            'auth', 
+            'database', 
+            'messaging', 
+            'storage', 
+            'analytics', 
+            'remoteConfig',
+            'performance',
+          ].filter(feature => typeof app[feature] === 'function');
+          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
+        } catch (e) {
+          console.error(e);
+          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+        }
+      });
+    </script>
+  </body>
+</html>

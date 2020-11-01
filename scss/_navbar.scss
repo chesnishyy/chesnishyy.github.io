@@ -5,8 +5,26 @@
     .navbar-brand-wrapper {
       .logo {
         height: 50px;
-        
       }
+
+      .contacts {
+        @media (min-width: 992px) {
+          display: none;
+        }
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 0 auto;
+        .icons {
+          display: flex;
+          justify-content: space-around;
+        }
+
+        a {
+          color: $black;
+        }
+      }
+
       @media (max-width: 992px) {
         width: 100%;
       }
@@ -35,17 +53,35 @@
           font-weight: 500;
           color: #111111;
           &:hover {
-            color: $danger;
+            color: $primary;
             transition: all 0.3s ease;
           }
           &.active {
-            color: $danger;
+            color: $primary;
           }
         }
       }
     }
     .navbar-collapse-logo {
       display: none;
+    }
+
+    .contacts {
+      @media (max-width: 992px) {
+        display: none;
+      }
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      .icons {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      a {
+        color: $black;
+      }
     }
   }
 }

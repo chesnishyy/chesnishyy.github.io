@@ -2,7 +2,7 @@
 window.onscroll = function() {scrollFunction()};
 var element = document.getElementById("body");
 function scrollFunction() {
-  if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
       $(".navbar").addClass("fixed-top");
       element.classList.add("header-small");
       $("body").addClass("body-top-padding");
@@ -13,6 +13,12 @@ function scrollFunction() {
       $("body").removeClass("body-top-padding");
   }
 }
+
+element.addEventListener('click', () => {
+
+  $('body').removeClass('sidebar-open');
+  $('#navbarSupportedContent').removeClass('show');
+})
 
 // OWL-CAROUSAL
 $('.owl-carousel').owlCarousel({

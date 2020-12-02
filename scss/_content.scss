@@ -2,6 +2,8 @@ body {
   font-family: 'Poppins', sans-serif;
   margin: 0px;
   color: #000000;
+  background-repeat: repeat;
+  background-image: url(/img/bg5.png);
   &.body-top-padding {
     padding-top: 167px;
   }
@@ -57,7 +59,7 @@ body {
     font-weight: 500;
     transition: color 0.5s ease-in-out;
     &:hover {
-      color: $danger;
+      color: $primary;
     }
   }
 
@@ -68,6 +70,15 @@ body {
     &:hover {
       transform: scale(1.3);
     }
+  }
+
+  .activity {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: $site-background;
+    margin: 10px;
   }
 }
 
@@ -124,13 +135,13 @@ body {
   }
 
   .category-img {
-    width: 260px;
+    // width: 260px;
     height: 260px;
     margin: 10px;
   }
 
   .category-img:hover {
-    cursor: pointer;
+    // cursor: pointer;
     //TODO: uncomment width/height and add animation
     //width: 255px;
     //height: 255px;
@@ -173,7 +184,7 @@ body {
   border-radius: 6px;
 
   .content-divider {
-    background-color: $danger;
+    background-color: $primary;
     height: 3px;
     width: 80px;
   }
@@ -209,7 +220,7 @@ body {
 
 footer {
   a {
-    color: #ff0000;
+    color: $primary;
     &:hover {
       color: black;
     }
@@ -258,7 +269,7 @@ footer {
         width: 0.9375rem;
         height: 0.9375rem;
         box-sizing: border-box;
-        background-color: #ff0000;
+        background-color: $primary;
         border: 3px solid transparent;
         border-radius: 50%;
         -webkit-transform: scale(0.6);
@@ -269,7 +280,7 @@ footer {
       &.active {
         span {
           background-color: transparent;
-          border-color: #ff0000;
+          border-color: $primary;
           -webkit-transform: scale(0.9);
           transform: scale(0.9);
         }
@@ -289,12 +300,12 @@ footer {
 .owl-item {
   &:nth-child(odd) {
     .content-divider {
-      background-color: $danger;
+      background-color: $primary;
     }
   }
   &:nth-child(even) {
     .content-divider {
-      background-color: $danger;
+      background-color: $primary;
     }
   }
 }

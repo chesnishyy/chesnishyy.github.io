@@ -8,8 +8,8 @@ app.get('/', (req, res) => {
     res.sendFile('index.html', { root: `${__dirname}/..` });
 });
 
-app.get('/test-page', (req, res) => {
-    res.send('TEST PAGE!');
+app.get('/price-calculator', (req, res) => {
+    res.send('PRICE CALCULATOR!');
 });
 
 app.listen(port, () => {

@@ -5,14 +5,7 @@
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
-    ],
-    "rewrites": [ {
-      "source": "/app",
-      "run": {
-        "serviceId": "app",
-        "region": "us-central1"
-      }
-    } ]
+    ]
   },
   "firestore": {
     "rules": "firestore.rules",

@@ -1,6 +1,6 @@
 // HEADER ANIMATION
 window.onscroll = function() {scrollFunction()};
-var element = document.getElementById("body");
+const element = document.getElementById("body");
 function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
       $(".navbar").addClass("fixed-top");
@@ -26,7 +26,7 @@ $('.owl-carousel').owlCarousel({
     loop:true,
     nav:false,
     dot:true,
-    autoplay: true,
+    autoplay: false,
     slideTransition: 'linear',
     autoplayHoverPause: true,
     responsive:{
@@ -45,7 +45,7 @@ $('.owl-carousel').owlCarousel({
 // SCROLLSPY
 $(document).ready(function() {
   $(".nav-link").click(function() {
-      var t = $(this).attr("href");
+      const t = $(this).attr("href");
       $("html, body").animate({
           scrollTop: $(t).offset().top - 75
       }, {
@@ -57,7 +57,6 @@ $(document).ready(function() {
 
 });
 
-AOS
 AOS.init({
     offset: 120, 
     delay: 0,
@@ -80,7 +79,7 @@ AOS.init({
 
 
   window.onresize = function() {
-    var w = window.innerWidth;
+    const w = window.innerWidth;
     if(w>=992) {
       $('body').removeClass('sidebar-open');
       $('#navbarSupportedContent').removeClass('show');
